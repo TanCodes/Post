@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+/* main frame */
+.frame {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background: #000000;
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+}
+
+  /* center frame : actual part */
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yellow-square {
+      height: 90px;
+      width: 39px;
+      position: relative;
+      box-shadow: 02px 02px 30px rgb(255, 244, 92);
+      cursor: pointer;
+}
+
+.yellow-square :hover{
+    box-shadow: 2px 2px 400px 90px  rgb(212, 200, 20) ;
+}
+.yellow {
+    box-shadow: none;
+
+}
+
+.yellow {
+    transition: box-shadow 0.8s, background-color 0.8s;
+}
+
+.top {
+      background-color: #fff45c; 
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -7%);
+      border-radius: 50%;
+      box-shadow: 0px 0px 50px #fff45c;
+}
+
+.bottom-left, .bottom-right {
+      position: absolute;
+}
+
+.bottom-left {
+    width: 25px;
+    height: 45px;
+    background: #fff45c;
+    transform: skew(26deg);
+    bottom: 0;
+    left: -8px;
+}
+
+.bottom-right {
+      width: 25px;
+      height: 44px;
+      background: #fff45c; 
+      transform: skew(-25deg);
+      bottom: 0;
+      right: -8px;
+}
+/* horizontal line */
+.white-radius {
+      height: 5px;
+      margin-top: 6px;
+      width: 35px;
+      border-radius: 10px;
+      background: white;
+}
+
+.white-square {
+      height: 10px;
+      width: 20px;
+      background: white;
+      margin-top: 6px;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius : 2rem ;
+}
+
+
+  /* tancodes */
+p{
+    
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 0.6rem;
+    margin-top: 96%;
+    text-align: center;
+    color: azure;
+}
