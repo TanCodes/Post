@@ -1,0 +1,38 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.wave{
+    width: 1000px;
+    height: 800px;
+    background-color: #00B4DB;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 35%;
+    box-shadow: 0px 5px 15px aqua;
+    cursor: pointer;
+    animation: wave 10s linear infinite;
+}
+
+@keyframes wave{
+    from{
+        transform: rotate(0deg);
+        background: #6dd5ed;
+        box-shadow: 0px 5px 15px aqua;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.wave:hover{
+    background: rgb(57, 102, 224);
+}
