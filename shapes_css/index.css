@@ -1,0 +1,129 @@
+.center{
+    background: rgb(68, 67, 67);
+    height: 100%;
+    width: 35%;
+    margin: 0% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-column-gap: 50px;
+    padding: 50px;
+    border-radius: 1rem;
+    box-shadow: rgb(105, 105, 104) 2px 2px 40px;
+}
+
+/* text name */
+p{
+    padding: 10px;
+    color: honeydew;
+    text-align: center;
+}
+
+/* circle */
+.circle{
+    background: rgb(245, 135, 135);
+    height: 100px;
+    width: 100px;
+    border-radius: 4rem;
+}
+
+/* square */
+.square{
+    background: #03d3fc;
+    height:100px;
+    width: 100px;
+}
+
+/* rectangle */
+.rectangle{
+    background: rgb(172, 169, 135);
+    height:100px;
+    width: 200px;
+}
+
+/* triangle */
+.triangle{
+    border-color: transparent transparent green transparent;
+    border-style: solid;
+    border-width: 0px 100px 100px 100px;
+    height: 0px;
+    width: 0px;
+}
+
+/* triangle name positiion */
+.triangle :first-child{
+    margin-left: -25px; padding-top:50px; 
+}
+
+/* star */
+.star {
+    position: relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-top: 20%;
+    margin-left: 20%;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0.7em solid #fc0;
+    border-left: 0.3em solid transparent;
+    font-size: 40px;
+}
+
+.star:before, .star:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0.6em;
+    left: -1em;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid #ffcc00;
+    border-left: 1em solid transparent;
+    transform: rotate(-35deg);
+}
+.star:after {
+    transform: rotate(35deg);
+}
+
+/* star name position */
+.star :first-child{
+    margin-left: -20px; padding-top:55px;
+    font-size: 20px;
+}
+
+/* semi-circle */
+.semi_circle{
+    background: #000;
+    height: 100px;
+    width: 200px;
+    border-radius:10rem 10rem 0 0;
+}
+
+/* pallerelogram */
+.pal{
+    background: rgb(241, 209, 209);
+    height:100px;
+    width: 150px;
+    transform: skew(-20deg);
+}
+
+/* bg change on hover */
+.circle:hover{
+    background: rgb(160, 87, 87);
+}
+
+.square:hover{
+    background: #2bb8d4;
+}
+
+.rectangle:hover{
+    background: rgb(228, 222, 163);
+}
+
+.semi_circle:hover{
+    background-color: rgb(129, 124, 120);
+}
+
+.pal:hover{
+    background: rgb(252, 204, 204);
+}
